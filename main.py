@@ -1,9 +1,5 @@
-import intents as intents
 from nextcord.ext import commands
-from nextcord import Intents, SlashOption, ButtonStyle, Interaction, ui, Client, ClientUser, guild
-
 from Key import TOKEN
-
 
 bot = commands.Bot(command_prefix="$")
 
