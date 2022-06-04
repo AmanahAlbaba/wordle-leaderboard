@@ -13,6 +13,8 @@ class getLeaderboard(commands.Cog):
             await ctx.send("LeaderBoard - Average Number of Guesses")
             for i in range (len(rankedAvg)):
                 await ctx.send(str(int(i)+1) + ". <@" + str(rankedIds[i]) + ">: " + str(rankedAvg[i]))
+            if (rankedIds[0] == '698958117966315540'):
+              await ctx.send("Even though you're 'first' Yusuf, you're not REALLY first because your sample size is so small. I'm sure you learned this in stats")
         else:
             await ctx.send("There are no scores yet")
 

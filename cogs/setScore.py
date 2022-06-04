@@ -11,8 +11,9 @@ class setScore(commands.Cog):
         if ('Wordle' in message.content and '/' in message.content):
             id = str(message.author.id)
             if (id == '698958117966315540'):
-                await message.channel.send("You got lucky")
-
+                await message.channel.send("Stop using irate")
+            if (id == '181058833790009345'):
+                await message.channel.send("Stop using thank")
             for i in range (len(message.content)):
                 if(message.content[i]=='/'):
                     score = message.content[i-1]
@@ -23,15 +24,15 @@ class setScore(commands.Cog):
                     elif (score == '2'):
                         await message.channel.send("A bit sus :face_with_raised_eyebrow:")
                     elif (score == '3'):
-                        await message.channel.send("Bruh :unamused:")
+                        await message.channel.send("You probably googled the answer but wanted to seem less sus so you got it in 3 :unamused:")
                     elif (score == '4'):
-                        await message.channel.send("You did the bare minimum :yawning_face:")
+                        await message.channel.send("Your just average :yawning_face:")
                     elif (score == '5'):
-                        await message.channel.send("At least you didn't get it in 6 :poop:")
+                        await message.channel.send("Could've been worse :poop:")
                     elif (score== '6'):
-                        await message.channel.send("L :clown:")
+                        await message.channel.send("engineers dont need english anyways :skull:")
                     elif (score == 7):
-                        await message.channel.send("RIP you suck :skull:")
+                        await message.channel.send("engineers dont need english anyways :skull:")
                     break
             for file in os.listdir():
                 if(file == str(id) + ".csv"):
